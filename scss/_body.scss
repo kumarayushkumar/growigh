@@ -1,0 +1,56 @@
+@use 'custom' as *;
+@use 'mixins' as *;
+
+html {
+    scrollbar-color: #bd79f5 #f062f0;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+    background: #f062f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bd79f5;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-weight: 700 !important;
+}
+
+p {
+    font-weight: 300 !important;
+}
+
+svg {
+    margin: 0;
+    width: 100%;
+}
+
+.headingline {
+    &::before {
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        content: '';
+        width: 12rem;
+        height: 0.15rem;
+        @include hdl-mixin(0.9);
+    }
+    &::after {
+        margin-top: 0.1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
+        display: block;
+        content: '';
+        width: 12rem;
+        height: 0.15rem;
+        @include hdl-mixin(0.9);
+    }
+}

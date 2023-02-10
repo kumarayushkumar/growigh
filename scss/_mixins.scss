@@ -1,0 +1,13 @@
+@use './custom' as *;
+
+@mixin bg-mixin($alpha) {
+    background: linear-gradient(to right, rgba($tertiary, $alpha),rgba($primary, $alpha), rgba($secondary, $alpha));
+}
+
+@mixin btn-mixin($alpha) {
+    background: linear-gradient(to right, rgba($tertiary, $alpha), rgba($secondary, $alpha));
+}
+
+@mixin hdl-mixin($alpha) {
+    background: linear-gradient(to right, rgba(#E341F3, $alpha), rgba(#FA7F76, $alpha));
+}

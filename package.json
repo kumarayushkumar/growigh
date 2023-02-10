@@ -1,0 +1,20 @@
+{
+  "name": "growigh",
+  "version": "1.0.0",
+  "description": "Above your Imagination",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.42.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "autoprefixer": "^10.3.7",
+    "bootstrap": "^5.1.2",
+    "postcss-cli": "^9.0.1"
+  }
+}
