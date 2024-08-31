@@ -2,26 +2,25 @@
 @use './mixins' as *;
 
 #faq {
-    @include bg-mixin(1);
-    padding-bottom: 0rem;
+  @include bg-mixin(1);
+  padding-bottom: 0rem;
 
-    p {
-        font-size: 1.175rem;
-        margin: 0 !important;
+  p {
+    font-size: 1.175rem;
+    margin: 0 !important;
 
-        @include media-breakpoint-down(md) {
-            font-size: 1rem;
-        }
+    @include media-breakpoint-down(md) {
+      font-size: 1rem;
     }
+  }
 }
 
 .faq-svg-down {
-    margin-bottom: -1rem;
+  margin-bottom: -1rem;
 }
 
 @include media-breakpoint-up(lg) {
-    .faq-svg-up {
-        margin-top: -5rem;
-    }
+  .faq-svg-up {
+    margin-top: -5rem;
+  }
 }
-

@@ -2,70 +2,68 @@
 @use './mixins' as *;
 
 #contact-us {
-    background-color: #E6E9EC;
-    padding: 3rem 0; 
+  background-color: #e6e9ec;
+  padding: 3rem 0;
 
-    @include media-breakpoint-down(sm) {
-        padding-top: 1rem;
-        padding-bottom: 2rem
-    }
+  @include media-breakpoint-down(sm) {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
 }
 
-
 .bg-mixin {
-    @include bg-mixin(1);
+  @include bg-mixin(1);
 }
 
 .info {
-    padding: 2.5rem 0;
+  padding: 2.5rem 0;
 
-    @include media-breakpoint-up(sm) {
-        padding: 3rem 0;
-    }
+  @include media-breakpoint-up(sm) {
+    padding: 3rem 0;
+  }
 
-    &__list {
-        position: relative;
-        list-style: none;
-        display: block;
-        padding-top: 0.4rem;
-        padding-left: 0.5rem;
-        margin-bottom: 0;
-         
-        li::before {
-            font-family: "Font Awesome 5 Free";
-            content: "\f00c";
-            font-weight: 600;
-            margin-right: 0.5rem;
-            font-size: 1.2rem;
-        }
+  &__list {
+    position: relative;
+    list-style: none;
+    display: block;
+    padding-top: 0.4rem;
+    padding-left: 0.5rem;
+    margin-bottom: 0;
+
+    li::before {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f00c';
+      font-weight: 600;
+      margin-right: 0.5rem;
+      font-size: 1.2rem;
     }
+  }
 }
 
 .form {
-    button {
-        border: none;
-        color: $white;
+  button {
+    border: none;
+    color: $white;
 
-        a {
-            color: $white;
-            text-decoration: none;
-        }
+    a {
+      color: $white;
+      text-decoration: none;
     }
+  }
 
-    h3 {
-        color: $primary;
-    }
-
+  h3 {
+    color: $primary;
+  }
 }
 
 .icon {
-    margin-left: 0.25rem;
-    color: $white;
-    font-size: 1.5rem;
+  margin-left: 0.25rem;
+  color: $white;
+  font-size: 1.5rem;
 }
 
 .latest-work--hide {
-    @include media-breakpoint-down(lg) {
-        display: none;
-    }
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
 }

@@ -12315,6 +12315,7 @@ footer {
   height: 2.4rem;
   right: 1rem;
   bottom: 1rem;
+  background-color: #F12AF1;
 }
 @media (min-width: 576px) {
   .btt {
@@ -12340,7 +12341,7 @@ footer {
   height: 2.4rem;
   right: 1rem;
   bottom: 4.2rem;
-  background-color: #49C95A;
+  background-color: #49c95a;
 }
 @media (min-width: 576px) {
   .whatsapp-button {
